@@ -1,0 +1,29 @@
+---
+import Logo from './logo/Main.astro';
+
+const twClasses = `
+    flex
+    flex-col
+    items-center
+	p-8
+    pt-4
+    bg-words-50
+    dark:bg-words-950
+    text-center
+    border-b-4
+    border-b-accent-200
+`;
+
+const gradientClasses = `
+    bg-gradient-to-br
+    from-words-100
+    to-accent-600
+    bg-clip-text
+    text-transparent
+`;
+---
+
+<header class={twClasses}>
+    <Logo />
+    <h1 class={gradientClasses + " text-2xl"}>Leanna's Helping Hands</h1>
+</header>

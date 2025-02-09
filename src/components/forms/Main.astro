@@ -1,0 +1,14 @@
+---
+let { title, label } = Astro.props;
+---
+<form class="flex p-8 justify-center">
+    <div class="md:max-w-1/2 grid gap-2 rounded-xl p-8 bg-secondary-200 w-full text-words-50 dark:text-initial">
+        <h2 class="text-2xl text-center">
+            {title}
+        </h2>
+        <slot />
+        <button class="text-sm bg-behind-50 dark:bg-behind-950 p-2 rounded-sm text-words-950 dark:text-words-50">
+            {label}
+        </button>
+    </div>
+</form>

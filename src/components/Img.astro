@@ -1,0 +1,7 @@
+---
+import { Image } from 'astro:assets';
+
+let { src, alt, class: className } = Astro.props;
+---
+
+<Image class:list={[className]} src={src} alt={alt} />

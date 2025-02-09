@@ -1,0 +1,14 @@
+---
+let { day } = Astro.props;
+---
+
+<tr class="grid grid-cols-[auto_1fr] md:grid-cols-[.5fr_1.5fr] gap-x-6">
+    <td class="">
+        <p class="hidden lg:block">{day}</p>
+        <p class="lg:hidden">{day.slice(0, 3)}</p>
+    </td>
+    <td class="text-right md:text-initial">
+        <p>Closed</p>
+    </td>
+    <td></td>
+</tr>

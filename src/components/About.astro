@@ -1,0 +1,17 @@
+---
+import Title from './Title.astro';
+import Img from './Img.astro';
+import Message from './Message.astro';
+
+import LeannaAndFamily from '../assets/leannaandfamily.webp';
+---
+
+<article class="grid md:p-8 place-items-center 2xl:scale-125 2xl:py-16">
+    <Title />
+    <div class="flex flex-col items-center gap-6 md:grid grid-cols-2 md:mx-8 max-w-[1000px]">
+        <Img class="brightness-90 w-[444px] h-[222px] md:rounded-md shadow-lg object-cover" src={LeannaAndFamily} alt="Leanna and her family" />
+        <div class="lg:bg-words-100/30 lg:p-8 lg:rounded-sm">
+            <Message />
+        </div>
+    </div>
+</article>

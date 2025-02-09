@@ -1,0 +1,12 @@
+---
+import Element from './Element.astro';
+import TextElement from './TextElement.astro';
+import Main from './Main.astro';
+---
+
+<Main title="Contact Me" label="Send">
+    <Element name="name" type="text" placeholder="">Name*</Element>
+    <Element name="phone" type="text" placeholder="">Phone Number*</Element>
+    <Element name="email" type="text" placeholder="">Email Address</Element>
+    <TextElement name="notes" placeholder="">Other Notes</TextElement>
+</Main>

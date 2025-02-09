@@ -1,0 +1,22 @@
+---
+let { title } = Astro.props;
+
+const twClasses = `
+    grid
+    border
+    rounded-lg
+    m-8
+    p-8
+    w-fit
+    place-self-center
+    text-sm
+    md:text-base
+`
+---
+
+<div class="grid">
+    <h4 class="text-lg text-center">{title}</h4>
+    <table class={twClasses}>
+        <slot />
+    </table>
+</div>

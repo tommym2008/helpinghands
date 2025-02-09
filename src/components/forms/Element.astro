@@ -1,0 +1,14 @@
+---
+import Label from './Label.astro';
+import Input from './Input.astro';
+
+let { name, type, placeholder } = Astro.props;
+---
+
+
+<span class="grid gap-0.5">
+    <Label name={name}>
+        <slot />
+    </Label>
+    <Input name={name} id={name} type={type} placeholder={placeholder} />
+</span>
