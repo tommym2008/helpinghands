@@ -1,12 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-    font-family: 'Salsa';
-    src: url('/fonts/Salsa-Regular.ttf') format('truetype');
-    font-weight: 100 900;
-    font-display: swap;
-}
-
 @theme {
     --color-words-50: oklch(95.83% 0.011 39.44);
     --color-words-100: oklch(91.68% 0.021 36.03);
@@ -63,13 +56,4 @@
     --color-accent-800: oklch(32.99% 0.103 36.15);
     --color-accent-900: oklch(21.79% 0.060 40.19);
     --color-accent-950: oklch(15.52% 0.035 44.89);
-
-    --font-sm: '0.750rem';
-    --font-base: '1rem';
-    --font-xl: '1.333rem';
-    --font-2xl: '1.777rem';
-    --font-3xl: '2.369rem';
-    --font-4xl: '3.158rem';
-    --font-5xl: '3.976rem';
-    --font-salsa: 'Salsa';
-  }  
+}  
