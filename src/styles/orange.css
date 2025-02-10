@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Salsa';
+    src: url('/fonts/Salsa-Regular.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+@theme {
+    --color-words-50: oklch(95.83% 0.011 39.44);
+    --color-words-100: oklch(91.68% 0.021 36.03);
+    --color-words-200: oklch(83.31% 0.044 36.02);
+    --color-words-300: oklch(75.21% 0.069 38.19);
+    --color-words-400: oklch(66.96% 0.096 37.74);
+    --color-words-500: oklch(59.00% 0.123 37.49);
+    --color-words-600: oklch(50.35% 0.103 37.75);
+    --color-words-700: oklch(41.31% 0.081 38.20);
+    --color-words-800: oklch(31.41% 0.057 36.40);
+    --color-words-900: oklch(21.05% 0.032 36.29);
+    --color-words-950: oklch(15.64% 0.017 41.09);
+    --color-behind-50: oklch(95.88% 0.012 43.28);
+    --color-behind-100: oklch(91.98% 0.024 44.33);
+    --color-behind-200: oklch(83.84% 0.051 42.95);
+    --color-behind-300: oklch(75.90% 0.078 43.09);
+    --color-behind-400: oklch(67.96% 0.108 42.06);
+    --color-behind-500: oklch(60.60% 0.136 41.53);
+    --color-behind-600: oklch(51.57% 0.114 41.37);
+    --color-behind-700: oklch(42.30% 0.090 42.09);
+    --color-behind-800: oklch(32.31% 0.065 41.97);
+    --color-behind-900: oklch(21.57% 0.035 43.37);
+    --color-behind-950: oklch(15.77% 0.020 45.56);
+    --color-primary-50: oklch(95.82% 0.015 37.88);
+    --color-primary-100: oklch(91.64% 0.031 40.08);
+    --color-primary-200: oklch(83.33% 0.064 39.24);
+    --color-primary-300: oklch(75.35% 0.100 39.42);
+    --color-primary-400: oklch(67.74% 0.136 39.04);
+    --color-primary-500: oklch(61.09% 0.171 38.13);
+    --color-primary-600: oklch(51.91% 0.142 38.18);
+    --color-primary-700: oklch(42.47% 0.113 38.48);
+    --color-primary-800: oklch(32.32% 0.081 38.60);
+    --color-primary-900: oklch(21.52% 0.046 39.73);
+    --color-primary-950: oklch(15.31% 0.026 43.15);
+    --color-secondary-50: oklch(95.69% 0.017 35.34);
+    --color-secondary-100: oklch(91.38% 0.036 37.35);
+    --color-secondary-200: oklch(82.98% 0.075 37.36);
+    --color-secondary-300: oklch(75.00% 0.116 37.47);
+    --color-secondary-400: oklch(67.90% 0.157 37.88);
+    --color-secondary-500: oklch(61.67% 0.192 36.31);
+    --color-secondary-600: oklch(52.57% 0.161 36.63);
+    --color-secondary-700: oklch(42.77% 0.129 36.49);
+    --color-secondary-800: oklch(32.52% 0.093 36.84);
+    --color-secondary-900: oklch(21.45% 0.053 38.14);
+    --color-secondary-950: oklch(15.46% 0.029 47.16);
+    --color-accent-50: oklch(95.52% 0.020 37.03);
+    --color-accent-100: oklch(91.38% 0.041 38.73);
+    --color-accent-200: oklch(82.84% 0.085 37.05);
+    --color-accent-300: oklch(75.16% 0.132 37.69);
+    --color-accent-400: oklch(68.50% 0.177 37.55);
+    --color-accent-500: oklch(63.10% 0.213 35.11);
+    --color-accent-600: oklch(53.73% 0.179 35.53);
+    --color-accent-700: oklch(43.66% 0.142 35.76);
+    --color-accent-800: oklch(32.99% 0.103 36.15);
+    --color-accent-900: oklch(21.79% 0.060 40.19);
+    --color-accent-950: oklch(15.52% 0.035 44.89);
+
+    --font-sm: '0.750rem';
+    --font-base: '1rem';
+    --font-xl: '1.333rem';
+    --font-2xl: '1.777rem';
+    --font-3xl: '2.369rem';
+    --font-4xl: '3.158rem';
+    --font-5xl: '3.976rem';
+    --font-salsa: 'Salsa';
+  }  
