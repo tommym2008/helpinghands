@@ -1,5 +1,5 @@
 ---
-let { name, id, placeholder } = Astro.props;
+let { name, id, placeholder } = Astro.props
 
 const twClasses = `
     border
@@ -9,7 +9,10 @@ const twClasses = `
     md:p-2
     border-words-50
     outline-words-50
+    resize-none
+    text-inherit
 `
 ---
 
-<textarea name={name} id={id} placeholder={placeholder} class={twClasses} />
+<textarea name={name} id={id} placeholder={placeholder} class={twClasses}
+></textarea>

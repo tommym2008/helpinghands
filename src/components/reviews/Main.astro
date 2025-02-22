@@ -1,14 +1,22 @@
 ---
-import ComingSoon from './ComingSoon.astro';
+import ComingSoon from "./ComingSoon.astro"
 // import DummySection from './DummySection.astro';
 
-import { Image } from 'astro:assets';
-import MommyAndBaby2 from '../../assets/mommyandbaby2.webp';
+import { Image } from "astro:assets"
+import MommyAndBaby2 from "../../assets/mommyandbaby2.webp"
 ---
 
 <div class="flex flex-col gap-4 items-center text-words-50">
-    <h2 class="absolute text-2xl z-50 pt-6 sm:pt-14 text-center text-pretty p-4 sm:p-8 max-w-[400px]">Discover Why Leanna's Helping Hands' Clients Love Her</h2>
-    <ComingSoon />
-    <Image class="max-h-[275px] object-cover brightness-75 z-0" src={MommyAndBaby2} alt="Mommy and Baby" />
+  <h2
+    class="absolute text-2xl z-50 pt-6 sm:pt-14 text-center text-pretty p-4 sm:p-8 max-w-[400px]"
+  >
+    Discover Why Leanna's Helping Hands' Clients Love Her
+  </h2>
+  <ComingSoon />
+  <Image
+    class="max-h-[275px] object-cover brightness-75 z-0"
+    src={MommyAndBaby2}
+    alt="Mommy and Baby"
+  />
 </div>
 <!-- <DummySection /> -->

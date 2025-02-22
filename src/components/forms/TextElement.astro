@@ -1,14 +1,13 @@
 ---
-import Label from './Label.astro';
-import TextArea from './TextArea.astro';
+import Label from "./Label.astro"
+import TextArea from "./TextArea.astro"
 
-let { name, placeholder } = Astro.props;
+let { name, placeholder } = Astro.props
 ---
 
-
-<span class="grid gap-2">
-    <Label name={name}>
-        <slot />
-    </Label>
-    <TextArea name={name} id={name} placeholder={placeholder} />
+<span class="grid gap-2 text-black dark:text-white">
+  <Label name={name}>
+    <slot />
+  </Label>
+  <TextArea name={name} id={name} placeholder={placeholder} />
 </span>

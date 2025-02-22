@@ -1,34 +1,72 @@
 ---
-import Img from './Img.astro';
-import Logo from './logo/Hero.astro';
+import Img from "./Img.astro"
+import Logo from "./logo/Hero.astro"
 
-import MommyAndBaby1 from '../assets/mommyandbaby1.webp';
+import MommyAndBaby1 from "../assets/mommyandbaby1.webp"
 ---
 
-<div class="w-full max-h-[800px] flex flex-col justify-center items-center text-center md:text-left">
-    <div class="absolute z-50 w-full max-h-[800px] flex flex-col justify-center items-center gap-2 md:gap-5">
-        <section class="w-full grid md:grid-cols-2 lg:px-12">
-            <div class="z-50 w-full top-[calc(50%-100px)] left-1/8 flex flex-col items-center md:items-start gap-2 md:gap-5 md:pl-8 lg:pl-16">
-                <p class="text-sm md:text-md lg:text-lg text-pretty max-w-[300px] text-words-50">
-                    Empowering parents with nurturing care and guidance for new beginnings.
-                </p>
-                <h2 class="font-bold font leading-none font-heavy text-2xl md:text-3xl lg:text-5xl text-pretty max-w-[350px] text-white">Compassionate Postpartum Doula Support</h2>
-                <span class="flex gap-4 items-center">
-                    <a href="#support" class="bg-behind-50 dark:bg-behind-950 text-sm lg:text-base p-2 lg:p-4 rounded-sm cursor-pointer w-fit md:my-4">
-                        Get Support Today
-                    </a>
-                    <span class="flex gap-4 items-center text-words-50">
-                        <a href="tel:9168122775">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"/></svg>
-                        </a>
-                        <a href="mailto:">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-287q5 0 10.5-1.5T501-453l283-177q8-5 12-12.5t4-16.5q0-20-17-30t-35 1L480-520 212-688q-18-11-35-.5T160-659q0 10 4 17.5t12 11.5l283 177q5 3 10.5 4.5T480-447Z"/></svg>
-                        </a>
-                    </span>
-                </span>
-            </div>
-            <Logo />
-        </section>
-    </div>
-    <Img class="max-h-[800px] w-full shadow-lg brightness-65 object-cover" src={MommyAndBaby1} alt="Mommy and Baby" />
+<div
+  class="w-full max-h-[800px] flex flex-col justify-center items-center text-center md:text-left"
+>
+  <div
+    class="absolute z-50 w-full max-h-[800px] flex flex-col justify-center items-center gap-2 md:gap-5"
+  >
+    <section class="w-full grid md:grid-cols-2 lg:px-12">
+      <div
+        class="z-50 w-full top-[calc(50%-100px)] left-1/8 flex flex-col items-center md:items-start gap-2 md:gap-5 md:pl-8 lg:pl-16"
+      >
+        <p
+          class="text-sm md:text-md lg:text-lg text-pretty max-w-[300px] text-words-50"
+        >
+          Empowering parents with nurturing care and guidance for new
+          beginnings.
+        </p>
+        <h2
+          class="font-bold font leading-none font-heavy text-2xl md:text-3xl lg:text-5xl text-pretty max-w-[350px] text-white"
+        >
+          Compassionate Postpartum Doula Support
+        </h2>
+        <span class="flex gap-4 items-center">
+          <a
+            href="#support"
+            class="bg-behind-50 dark:bg-behind-950 text-sm lg:text-base p-2 lg:p-4 rounded-sm cursor-pointer w-fit md:my-4"
+          >
+            Get Support Today
+          </a>
+          <span class="flex gap-4 items-center text-words-50">
+            <a href="tel:9168122775">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="currentColor"
+                ><path
+                  d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12Z"
+                ></path></svg
+              >
+            </a>
+            <a href="mailto:">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="currentColor"
+                ><path
+                  d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-287q5 0 10.5-1.5T501-453l283-177q8-5 12-12.5t4-16.5q0-20-17-30t-35 1L480-520 212-688q-18-11-35-.5T160-659q0 10 4 17.5t12 11.5l283 177q5 3 10.5 4.5T480-447Z"
+                ></path></svg
+              >
+            </a>
+          </span>
+        </span>
+      </div>
+      <Logo />
+    </section>
+  </div>
+  <Img
+    class="max-h-[800px] w-full shadow-lg brightness-65 object-cover"
+    src={MommyAndBaby1}
+    alt="Mommy and Baby"
+  />
 </div>

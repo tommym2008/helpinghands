@@ -1,5 +1,5 @@
 ---
-let { type, name, id, placeholder } = Astro.props;
+let { type, name, id, placeholder } = Astro.props
 
 const twClasses = `
     border
@@ -9,7 +9,16 @@ const twClasses = `
     md:p-2
     border-words-50
     outline-words-50
+    text-inherit
 `
 ---
 
-<input type={type} name={name} id={id} placeholder={placeholder} class={twClasses} />
+<input
+  type={type}
+  name={name}
+  id={id}
+  placeholder={placeholder}
+  class={twClasses}
+  autocomplete="off"
+  spellcheck="false"
+/>

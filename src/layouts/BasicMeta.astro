@@ -1,10 +1,10 @@
 ---
-import {SITE_TITLE} from '../consts';
+import { SITE_TITLE } from "../consts"
 
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
 
-import '../styles/global.css';
+import "../styles/global.css"
 
 const twClasses = `
 	w-full
@@ -17,49 +17,49 @@ const twClasses = `
 	flex-col
 `
 
-import { getImage } from 'astro:assets'
-import faviconSrc from '../assets/favicon.png'
-import faviconSvgSrc from '../assets/favicon.svg'
+import { getImage } from "astro:assets"
+import faviconSrc from "../assets/favicon.png"
+import faviconSvgSrc from "../assets/favicon.svg"
 
 const appleTouchIcon = await getImage({
   src: faviconSrc,
   width: 180,
   height: 180,
-  format: 'png'
+  format: "png",
 })
-const faviconSvg = await getImage({ src: faviconSvgSrc, format: 'svg' })
+const faviconSvg = await getImage({ src: faviconSvgSrc, format: "svg" })
 
-let { title } = Astro.props;
+let { title } = Astro.props
 ---
 
 <!doctype html>
 <html lang="en" class="w-full">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/favicon.ico" sizes="32x32" />
-		<link rel="icon" href={faviconSvg.src} type="image/svg+xml" />
-		<link rel="apple-touch-icon" href={appleTouchIcon.src} />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title || SITE_TITLE}</title>
-	</head>
-	<body class={twClasses}>
-		<Header />
-		<slot />
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href={faviconSvg.src} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={appleTouchIcon.src} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title || SITE_TITLE}</title>
+  </head>
+  <body class={twClasses}>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
 </html>
 
 <style>
-	html {
-		margin: 0;
-		overflow-x: hidden;
-		max-width: 100vw;
-		height: 100%;
-	}
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
+  html {
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100vw;
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
